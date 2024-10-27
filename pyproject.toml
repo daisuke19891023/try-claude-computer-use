@@ -127,6 +127,14 @@ ignore_missing_imports = true
 exclude = ["notebooks", "examples", "example_data", "lsrc/pydantic"]
 disable_error_code = ["misc"]
 
+[[tool.mypy.overrides]]
+module = [
+    "pytest.*",
+    "pydantic.*",
+    "pydantic_settings.*"
+]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 pythonpath = [ "src"]
 testpaths = [
