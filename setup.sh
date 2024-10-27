@@ -72,4 +72,6 @@ info "pre-commitを設定しています..."
 uv run pre-commit install || error "pre-commitの設定に失敗しました"
 success "pre-commitが設定されました"
 
+ude-computer-use$ uv pip install -e .
+
 info "セットアップが完了しました"

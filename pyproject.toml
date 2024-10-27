@@ -1,7 +1,7 @@
 [project]
-name = "YOUR_PROJECT_NAME"
+name = "llm-try"
 version = "0.1.0"
-description = "Add your description here"
+description = "llm-try app repo"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
