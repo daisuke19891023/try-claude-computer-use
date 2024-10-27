@@ -64,7 +64,7 @@ fi
 
 # Install dependencies
 info "依存関係をインストールしています..."
-uv sync || error "依存関係のインストールに失敗しました"
+uv sync --all-extras || error "依存関係のインストールに失敗しました"
 success "依存関係がインストールされました"
 
 # Set up pre-commit

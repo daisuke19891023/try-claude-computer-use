@@ -1,0 +1,22 @@
+{
+    "[python]": {
+        "editor.renderWhitespace": "all",
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports":"explicit",
+            "source.fixAll":"explicit"
+        }
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "cSpell.words": [
+        "usefixtures"
+    ],
+
+}

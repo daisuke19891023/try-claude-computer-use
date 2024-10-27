@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "load-dotenv>=0.1.0",
+    "pydantic-settings>=2.6.0",
     "pydantic>=2.9.2",
 ]
 [project.optional-dependencies]
@@ -21,6 +22,11 @@ tests = [
     "pytest-cov>=5.0.0",
     "pytest-mock>=3.14.0",
     "responses>=0.25.3",
+    "pytest-xdist>=3.6.1",
+    "pytest-html>=4.1.1",
+    "pytest-randomly>=3.16.0",
+    "pytest-sugar>=1.0.0",
+    "pytest-clarity>=1.0.1",
 ]
 openai = [
     "openai>=1.51.2",
@@ -126,7 +132,7 @@ pythonpath = [ "src"]
 testpaths = [
   "tests"
 ]
-addopts = "-v --cov=src"
+addopts = "-v --cov=src -n auto  --html=.test/pytest_report.html"
 markers = [
   "slow: marks tests as slow (deselect with '-m \"not slow\"')",
   "integration: marks integration tests"
