@@ -56,7 +56,7 @@ fi
 # Create virtual environment
 if [ ! -d ".venv" ]; then
     info "仮想環境を作成しています..."
-    uv venv || error "仮想環境の作成に失敗しました"
+    uv venv -p 3.12 || error "仮想環境の作成に失敗しました"
     success "仮想環境が作成されました"
 else
     info "仮想環境は既に存在します"
